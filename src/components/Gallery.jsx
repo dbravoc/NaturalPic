@@ -24,8 +24,10 @@ const Gallery = () => {
     <div className="gallery grid-columns-5 p-3">
       {photos.map(photo => (
   <div key={photo.id} className="photo-item">
-    <img src={photo.src.original} alt={photo.alt} />
+    <img src={photo.src.large} alt={photo.alt} />
+    <div className="icon-heart">
     <IconHeart id={photo.id} filled={favorites.includes(photo.id)} />
+    </div>
   </div>
 ))}
 

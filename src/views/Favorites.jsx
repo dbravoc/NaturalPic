@@ -26,7 +26,7 @@ useEffect(() => {
       <div className="p-3 gallery grid-columns-4">
         {favoritePhotos.map(photo => (
           <div key={photo.id} className="photo-item">
-            <img src={photo.url} alt={photo.title} />
+            <img src={photo.src.large} alt={photo.alt} />
             {/* Incluir IconHeart si es necesario */}
           </div>
         ))}
